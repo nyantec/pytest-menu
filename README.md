@@ -12,6 +12,8 @@ Run ``pytest`` with ``--menu``.
 
 ## License
 
+This software is released under a MirOS-License, which can be found in the LICENSE file.
+
 This software is based on [pytest-interactive](https://github.com/tgoodlet/pytest-interactive.git) which is under a MIT License:
 
 ```
