@@ -1,4 +1,4 @@
-import pytest, sqlite3, os, sys
+import pytest
 from collections import OrderedDict, namedtuple
 
 import npyscreen, curses
