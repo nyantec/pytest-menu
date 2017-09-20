@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-    pip install -e git+https://github.com/nyantec/pytest-menu.py
+pip install git+https://github.com/nyantec/pytest-menu.git
 ```
 
 ## Usage
