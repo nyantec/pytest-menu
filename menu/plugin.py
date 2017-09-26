@@ -67,10 +67,11 @@ def get_path(item):
         if hasattr(i, "_obj") and hasattr(i._obj, "__name__"): # Session and Instance don't have i.obj
             name = i._obj.__name__
             if '.' in name and isinstance(i, pytest.Module):
+                path.extend(name.split('.')[:-1])
                 name = name.split('.')[-1]
             elif isinstance(i, pytest.Item):
                 name = i.name
-                if name.endswith("]"):
+                if "[" in name:
                     path.append(name.split('[')[0])
             path.append(name)
     return path
