@@ -55,8 +55,8 @@ def pytest_collection_modifyitems(session, config, items):
 
     test_cases = []
     for i in test_choices:
-        test_cases += i.walkTree()
-    test_cases = [x.test_case for x in test_cases if hasattr(x, "test_case")]
+        test_cases.append(i)
+    test_cases = [x.test_case for x in test_cases if hasattr(x, "test_case") if x.test_case not in test_cases]
     test_cases = [x for x in test_cases if type(x) == pytest.Function]
     items[:] = test_cases # Set pytest item list to selected test cases
 

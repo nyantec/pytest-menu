@@ -2,14 +2,14 @@ from setuptools import setup
 
 setup(
      name="pytest-menu",
-     version='0.0.3',
+     version='0.0.4',
      description='A pytest plugin for console based interactive test selection'
                  ' just after the collection phase',
      license='MIT',
      author='Karl Engelhardt',
      author_email='ken@nyantec.com',
      url='https://github.com/nyantec/pytest-menu',
-     download_url='https://github.com/nyantec/pytest-menu/tarball/0.0.3',
+     download_url='https://github.com/nyantec/pytest-menu/tarball/0.0.4',
      platforms=['linux'],
      packages=['menu'],
      entry_points={'pytest11': [
